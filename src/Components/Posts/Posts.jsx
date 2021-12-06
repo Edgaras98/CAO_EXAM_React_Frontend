@@ -72,7 +72,7 @@ const Posts = () => {
                 if (searchTerm === "") {
                   return data;
                 } else if (
-                  data.name.toLowerCase().includes(searchTerm.toLowerCase())
+                  data.book.toLowerCase().includes(searchTerm.toLowerCase())
                 ) {
                   return data;
                 }
@@ -80,7 +80,7 @@ const Posts = () => {
               .map((book) => (
                 <Modal
                   key={book.id}
-                  name={book.name}
+                  name={book.book}
                   author={book.author}
                   price={book.price}
                   createAt={book.created_at.split("T")[0]}
@@ -88,7 +88,7 @@ const Posts = () => {
                   description={book.description}
                   handleDelete={() => {
                     if (
-                      window.confirm(`Ar tikrai norite ištrinti ${book.name}?`)
+                      window.confirm(`Ar tikrai norite ištrinti ${book.book}?`)
                     ) {
                       fetch(`http://localhost:3000/books/${book.id}`, {
                         method: "DELETE",

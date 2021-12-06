@@ -36,7 +36,6 @@ const Product = () => {
       />
       <AuthManager />
       <section className="product-id-section">
-        {console.log(params.id)}
         {fetchedData.map((book) => (
           <ProductID
             imageLink={imgLink + book.image}

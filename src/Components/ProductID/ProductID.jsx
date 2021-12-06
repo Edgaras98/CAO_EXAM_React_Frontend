@@ -9,12 +9,11 @@ const ProductID = ({
   created_at,
   phone,
   email,
-  imgFull,
 }) => {
   return (
     <div className="product-id-div">
       <div className="img-div">
-        <img src={imageLink} alt="product-foto" onClick={imgFull}></img>
+        <img src={imageLink} alt="product-foto"></img>
       </div>
       <div className="product-id-info">
         <h1>{bookname}</h1>
@@ -33,8 +32,8 @@ const ProductID = ({
         </h3>
         <div className="sellers-div">
           <h2>Pardavėjo Kontaktai</h2>
-          <h3>Tel.numeris: {phone}</h3>
-          <h3>El.paštas: {email}</h3>
+          <h3>{phone}</h3>
+          <h3>{email}</h3>
         </div>
       </div>
     </div>

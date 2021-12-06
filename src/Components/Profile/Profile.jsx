@@ -6,6 +6,7 @@ import { useNavigate } from "react-router";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "../Footer/Footer";
+import DataProfile from "../DataProfile/DataProfile";
 
 const Profile = () => {
   const [userData, setUserData] = useState([]);
@@ -20,7 +21,7 @@ const Profile = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        setUserData(data[0]);
+        setUserData(data);
       });
   }, []);
 
@@ -39,25 +40,21 @@ const Profile = () => {
       <section className="profile-section">
         <h2>Vartotojo duomenys</h2>
         <div className="wrap-div-profile">
-          <div className="profile-div">
-            <h2>
-              Vardas: <span>{userData.name}</span>
-            </h2>
-            <h2>
-              Pavardė: <span>{userData.surname}</span>
-            </h2>
-            <h2>
-              El.paštas: <span>{userData.email}</span>
-            </h2>
-            <h2>
-              Telefono numeris: <span>{userData.phone}</span>
-            </h2>
-          </div>
+          {userData.map((person) => (
+            <DataProfile
+              name={person.name.charAt(0).toUpperCase() + person.name.slice(1)}
+              surname={
+                person.surname.charAt(0).toUpperCase() + person.surname.slice(1)
+              }
+              email={person.email}
+              phone={person.phone}
+            />
+          ))}
           <div className="update-div">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                fetch("http://localhost:3000/user/", {
+                fetch("http://localhost:3000/user", {
                   method: "PUT",
                   headers: {
                     authorization: `Bearer ${token}`,

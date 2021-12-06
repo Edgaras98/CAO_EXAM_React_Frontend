@@ -6,6 +6,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.profile-div h2 {
+  color: black;
+}
+
 .update-div {
   padding-top: 2rem;
   width: 40%;
