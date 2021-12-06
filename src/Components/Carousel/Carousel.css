@@ -1,0 +1,55 @@
+.Carousel-div {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffff;
+}
+
+.wrapper1 {
+  width: 65%;
+  background-color: #ffff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.wrapper1 h1 {
+  font-size: 65px;
+}
+span {
+  color: #836953;
+}
+
+.gift-div {
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.img-div-svg img {
+  width: 75%;
+  background-color: #ffff;
+}
+
+.gift-div button {
+  border: 1px solid #aa8f79;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #ffff;
+  color: white;
+  cursor: pointer;
+}
+
+.info-div button {
+  border: 1px solid #aa8f79;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #aa8f79;
+  color: white;
+  cursor: pointer;
+}
+
+.info-div button:last-child {
+  margin: 0.5rem;
+  background-color: chocolate;
+  border: none;
+}

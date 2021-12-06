@@ -1,0 +1,25 @@
+.product-id-section {
+  background-color: #f8f8f7;
+  min-height: 100vh;
+  padding-top: 3rem;
+}
+
+.product-id-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.img-div img {
+  width: 400px;
+  padding: 2rem;
+}
+
+.sellers-div {
+  background-color: chocolate;
+  padding: 1rem;
+}

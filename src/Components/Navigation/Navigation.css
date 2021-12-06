@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lobster&display=swap");
+
+header {
+  width: 100%;
+  background-color: #ffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  top: 0;
+  position: sticky;
+  transition: 0.5s;
+}
+
+header.active {
+  background-color: #836953;
+}
+
+.wrapper {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #ffff;
+  transition: 0.5s;
+}
+
+.wrapper.active {
+  background-color: #836953;
+}
+
+.info-div {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-button-div button {
+  margin-left: 0.8rem;
+}
+
+.upload-button {
+  margin-left: 0.5rem;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #aa8f79;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #836953;
+  color: white;
+  cursor: pointer;
+}
+
+.upload-button:active {
+  background-color: white;
+  color: chocolate;
+}
+
+.log-reg-button:active {
+  color: white;
+  background-color: chocolate;
+}
+
+.log-reg-button {
+  transition: 0.5s;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid #aa8f79;
+  color: chocolate;
+}
+
+.log-reg-button.active {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: chocolate;
+  color: white;
+}
+
+.nav-search-div i {
+  padding: 0.3rem;
+  color: white;
+}
+
+a {
+  transition: 0.5s;
+  font-family: "Lobster", cursive;
+  text-decoration: none;
+  font-size: 34px;
+  color: chocolate;
+}
+
+a.active {
+  color: white;
+}

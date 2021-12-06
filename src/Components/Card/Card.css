@@ -1,0 +1,44 @@
+.card-div {
+  background-color: white;
+  max-width: 200px;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+  font-family: arial;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-div img {
+  width: 80%;
+}
+
+.card-div-name {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #aa8f79;
+}
+
+.card-div-author {
+  font-size: 14px;
+  font-weight: bolder;
+  color: black;
+}
+
+.card-div-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.card-div-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: white;
+  font-size: 20px;
+  background: chocolate;
+  transition: all 0.5s;
+}

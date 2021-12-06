@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lobster&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.extended-header {
+  margin: 0 auto;
+  top: 3.45rem;
+  position: sticky;
+  padding: 0.5rem;
+  width: 100%;
+  background: #ebe6dc;
+}
+
+.extended-nav-links {
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.add-book-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #836953;
+}
+.add-book-div:nth-child(2) {
+  margin-right: 1.5rem;
+  color: #836953;
+}
+.add-book-div:nth-child(1) {
+  margin-right: 1.5rem;
+  color: #836953;
+}
+.controlers-div {
+  display: flex;
+}
+
+.name-div p {
+  color: chocolate;
+  font-size: 18px;
+}
+
+.add-book-div a {
+  padding-left: 0.4rem;
+  color: #836953;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
